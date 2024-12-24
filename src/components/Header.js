@@ -18,7 +18,7 @@ const Header = ({ setCurrentPage }) => {
   return (
     <header>
       <div className="header-container">
-        <h1>HOMESTAYS BOOKING 🏣​​</h1>
+        <h1>DANTEWADA TOURISM BOOKING 🏣​​</h1>
         <div className="hamburger" onClick={toggleMenu}>
           <span></span>
           <span></span>
