@@ -1,0 +1,102 @@
+/* General Container */
+.details-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fdf3e6; /* Light grey for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Heading Styles */
+.details-container h1 {
+  font-size: 2.5rem;
+  color: #7c2525; /* Calm blue for a soothing look */
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+/* Images Section */
+.details-images {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.details-images img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.details-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Description */
+.details-description {
+  font-size: 1.2rem;
+  color: #8e3434;
+  margin-bottom: 20px;
+}
+
+/* Pricing and Contact */
+.details-pricing,
+.details-contact {
+  font-size: 1.1rem;
+  color: #f1091c;
+  margin-bottom: 10px;
+}
+
+.details-pricing strong,
+.details-contact strong {
+  color: #8b1c1c; /* Highlight text */
+}
+
+/* Book Now Button */
+.book-now {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #9b181d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-now:hover {
+  background-color: #34495e;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .details-container {
+    padding: 15px;
+  }
+
+  .details-container h1 {
+    font-size: 2rem;
+  }
+
+  .details-images {
+    flex-direction: column;
+  }
+
+  .details-images img {
+    max-width: 90%;
+  }
+
+  .book-now {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}

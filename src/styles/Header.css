@@ -1,0 +1,99 @@
+/* General Header Styles */
+header {
+    background-color: #751527; /* Calm blue */
+    color: #eddede; /* White text for contrast */
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  /* Header Container */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Branding (Title) */
+  .header-container h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    color: #531111;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .nav-menu button {
+    background: none;
+    border: none;
+    color: #ead7d7;
+    font-size: 1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-menu button:hover {
+    background-color: #dcadb6; /* Darker shade for hover effect */
+    border-radius: 5px;
+    color: #5b1818;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fdf3e6;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+  
+    .nav-menu button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  

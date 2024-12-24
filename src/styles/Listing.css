@@ -1,0 +1,156 @@
+/* Banner Styles */
+.banner-image {
+  position: relative;
+  overflow: hidden; /* Ensures child elements are clipped */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  animation: slowZoom 10s infinite alternate; /* Animation */
+  width: 100%; /* Set the desired width */
+  height: 450px;
+  object-fit: cover;
+}
+
+/* Keyframe animation for zooming */
+@keyframes slowZoom {
+  0% {
+    transform: scale(1); /* Normal scale */
+  }
+  100% {
+    transform: scale(1.2); /* Slightly zoomed-in */
+  }
+}
+
+body{
+  background-color:rgb(250, 236, 157) ;
+}
+
+
+.banner {
+  position: relative;
+  text-align: center;
+}
+
+
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Card Styles */
+.homestay-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.card {
+  display: flex;
+  width: 60%;
+  background-color: #d9c4a9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-images {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-slider {
+  display: flex;
+  animation: slide 6s infinite;
+}
+
+.image-slider img {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+.card-details {
+  flex: 1;
+  padding: 50px;
+}
+
+.card-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-details p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.card-details .view-details {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-details .view-details:hover {
+  background-color: #0056b3;
+}
+
+/* For small screens (phones, 480px and below) */
+@media (max-width: 480px) {
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-image {
+    height: 40vh; /* Reduce height on smaller screens */
+  }
+  .card {
+    width: 100%;
+    max-width: 300px; /* Adjust max width for smaller devices */
+  }
+}
+
+/* For medium screens (tablets, up to 768px) */
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 2.2rem;
+  }
+  .banner-image {
+    height: 45vh; /* Adjust height */
+  }
+  .card {
+    flex-direction: column; /* Stack card content */
+    width: 80%;
+  }
+}
+
+/* For large screens (desktops and larger, 1024px and above) */
+@media (min-width: 1024px) {
+  .banner-title {
+    font-size: 3rem;
+  }
+  .banner-image {
+    height: 60vh; /* Larger height for bigger screens */
+  }
+  .card {
+    flex-direction: row; /* Maintain row layout for larger screens */
+    width: 60%; /* Wider cards */
+  }
+}

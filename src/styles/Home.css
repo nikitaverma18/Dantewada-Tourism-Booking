@@ -1,0 +1,94 @@
+.home-container {
+  font-family: 'Arial', sans-serif;
+  padding: 40px;
+  background-color: #f4fba8;
+}
+
+.banner {
+  margin-bottom: 40px;
+}
+
+.banner img {
+  width: 100%;
+  height: 700px;
+  border-radius: 10px;
+}
+
+.destinations {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.destinations h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #620c0c;
+}
+
+.destination-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual Cards Styling */
+.card-1, .card-2, .card-3, .card-4, .card-5 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-1 img, .card-2 img, .card {
+  width: 100%;
+  height: 400px; /* Default height */
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.card-4 img, .card-5 img {
+  width: 100%;
+  height: 500px; /* Default height */
+  object-fit: cover;
+}
+
+.card-1 h3, .card-2 h3, .card-3 h3, .card-4 h3, .card-5 h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: #5d1111;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover {
+  transform: scale(1.05);
+}
+
+/* Layout Adjustments */
+.card-1, .card-2 {
+  flex: 1 1 calc(33.33% - 20px); /* Full-width for the first two cards */
+}
+
+.card-3, .card-4, .card-5 {
+  flex: 1 1 calc(33.33% - 20px); /* Three cards in a row */
+}
+
+.tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card-1, .card-2, .card-3, .card-4, .card-5 {
+    flex: 1 1 100%; /* Full-width on small screens */
+  }
+}
