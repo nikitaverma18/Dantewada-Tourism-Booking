@@ -5,10 +5,10 @@ const Details = ({setCurrentPage}) => {
   // Example details for a homestay (can be replaced with props or API data)
   const homestayDetails = {
     name: 'Peaceful Retreat',
-    images: ['/assets/homestay1.jpg', '/assets/homestay2.jpg'],
+    images: ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6PgG0BNeDxEYJsN3e6JOWtWvmnXLEx6gavw&s', 'https://content.jdmagicbox.com/comp/bastar/r8/9999p7782.7782.190804173037.n5r8/catalogue/dandami-luxury-resort-bastar-resorts-g6jemhu4qm.jpg'],
     description:
       'Enjoy a peaceful stay surrounded by lush greenery and serene landscapes. Perfect for a relaxing getaway.',
-    pricing: '₹3,000 per night',
+    pricing: '₹3,000 ',
     contact: '+91 9876543210',
   };
 

@@ -1,7 +1,7 @@
 .home-container {
   font-family: 'Arial', sans-serif;
   padding: 40px;
-  background-color: #f4fba8;
+  background-color: #f6fcb5;
 }
 
 .banner {
@@ -86,9 +86,67 @@
   font-size: 0.9rem;
 }
 
+/* Highlight active page button */
+.nav-menu button.active {
+  background-color: #ffffff; /* Highlight background */
+  color: #5b1818; /* Highlight text color */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Remove hover effect for the active button */
+.nav-menu button.active:hover {
+  background-color: #ffffff;
+  color: #5b1818;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .card-1, .card-2, .card-3, .card-4, .card-5 {
     flex: 1 1 100%; /* Full-width on small screens */
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .card-1, .card-2, .card-3, .card-4, .card-5 {
+    flex: 1 1 calc(45% - 20px); /* 2 cards per row for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-1, .card-2, .card-3, .card-4, .card-5 {
+    flex: 1 1 calc(100% - 20px); /* Full-width for smaller screens */
+  }
+
+  .destinations h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Phone-specific adjustments for screens below 480px */
+@media (max-width: 480px) {
+  .banner img {
+    max-height: 300px; /* Reduce banner height for small screens */
+  }
+
+  .destination-cards {
+    gap: 10px; /* Reduce gap between cards */
+  }
+
+  .card-1, .card-2, .card-3, .card-4, .card-5 {
+    flex: 1 1 100%; /* Each card takes full width */
+  }
+
+  .card-1 img, .card-2 img, .card-3 img, .card-4 img, .card-5 img {
+    max-height: 200px; /* Reduce image height */
+  }
+
+  .card-1 h3, .card-2 h3, .card-3 h3, .card-4 h3, .card-5 h3 {
+    font-size: 1rem; /* Smaller font size for titles */
+  }
+
+  .destinations h2 {
+    font-size: 1.5rem; /* Smaller header font size */
   }
 }
