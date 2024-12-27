@@ -142,7 +142,7 @@ const BookingForm = () => {
   const [statusMessage, setStatusMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const apiUrl = 'http://localhost:5000/api'; // Update with your actual API endpoint
+  const apiUrl = 'https://dantewada-tourism-booking.onrender.com'; // Update with your actual API endpoint
 
   const handleUserInputChange = (e) => {
     const { name, value } = e.target;
